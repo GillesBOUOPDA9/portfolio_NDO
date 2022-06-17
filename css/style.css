@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300&display=swap');
+
+body {
+    padding: 0 2%;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: darkorange;
+    font-family: algerian;
+    
+}
+
+nav .profile{
+    display: flex;
+    align-items: center;
+}
+
+nav .profile img{
+    width: 500px;
+    height: 500px;
+    
+}
+
+nav .profile h1{
+    
+    font-size: 30px;
+}
+
+/* ce code permet d'afficher les elements de la liste de la barre de navigation de facon horizontale */
+nav ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 30px;
+} 
+
+nav ul li a {
+    text-decoration: none;
+    
+}
+
+/* fait en sorte que lorsqu'on se place sur les elements de la la barre de navigation on puisse avoir un curseur sous forme de lien*/
+nav ul li{
+    margin-left: 100px;
+    cursor: pointer;
+    
+}
+
+
+.page-content {
+    margin: 4%;
+}
+.page-content header {
+    margin-top: 0;
+    max-width: 80%;
+}
+
+.page-content header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-family: sans-serif;
+    
+}
+
+.page-content header p {
+    line-height: 30px;
+    font-size: 22px;
+    color: darkblue;
+    font-family: 'Open Sans', sans-serif;
+    
+    font-weight: bold;
+
+}
+
+.page-content .presentation-image {
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    
+    
+}
+
+.page-content .presentation-image .img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-des-projets h1 {
+    margin-top: 3%;
+    font-size: 5vw;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+    
+.section-des-projets .projets {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justify-content: space-around;
+}
+
+.section-des-projets .projets .projet {
+    margin-right: 20px;
+    max-width: 195px;
+    
+    
+}
+
+.section-des-projets .projets .projet h2 {
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.section-des-projets .projets .projet .description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: darkblue;
+    
+    
+}
+
+.section-des-projets .projets .projet .dates {
+    font-size: 15px;
+    color: brown;
+    font-weight: bold;
+}
+
+/*style pour la section portant sur mon parcours*/
+.education h1 {
+    margin-top: 3%;
+    font-size: 5vw;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+    
+.education .moi {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justify-content: space-around;
+}
+
+.education .moi .cv {
+    margin-right: 20px;
+    max-width: 195px;
+    
+    
+}
+
+.education .moi .cv h2 {
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.education .moi .cv .etat {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: darkblue;
+    
+    
+}
+
+.education .moi .cv .dates {
+    font-size: 15px;
+    color: brown;
+    font-weight: bold;
+}
+
+footer {
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+
+}
+
+.colonne h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.colonne p {
+    
+    font-size: 20px;
+    cursor: pointer;
+    color: beige;
+}
+@media screen and (max-width: 700px) {
+    nav{
+        justify-content: center;
+    }
+    nav ul{
+        display: none;
+    }
+    .page-content header {
+        margin-top: 10%;
+        max-width: 100%; 
+    }
+
+    .page-content .section-des-projets {
+        margin-top: 15%;
+
+    }
+
+    .page-content .section-des-projets h1 {
+        font-size: 2em;
+
+    }
+
+    .section-des-projets .projets .projet {
+        margin-bottom: 20px;
+        max-width: 100%;
+        margin-right: 0;
+
+    }
+
+    .education {
+        margin-top: 15%;
+
+    }
+
+    .education h1 {
+        font-size: 2em;
+        font-family: 'Open Sans', sans-serif;
+
+    }
+
+    .education .moi .cv {
+        margin-bottom: 20px;
+        max-width: 100%;
+        margin-right: 0;
+
+    }
+
+    footer {
+        justify-content: flex-start;
+    }
+ 
+footer .column {
+    width: 80%;
+}
+
+} 
